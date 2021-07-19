@@ -14,8 +14,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-        home: CupertinoPage());
-      //home: HelloPage('Hello, World!'));
+      home: HelloPage('Hello, World!'));
   }
 }
 
@@ -48,6 +47,15 @@ class _HelloPageState extends State<HelloPage> {
             children: <Widget>[
               Text(_message, style: TextStyle(fontSize: 30)),
               Text('$_counter', style: TextStyle(fontSize: 30)),
+              RaisedButton(
+                child: Text('Move Page'),
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => CupertinoPage())
+                  );
+                },
+              )
             ],
           ))
         );
