@@ -3,7 +3,7 @@ import 'package:instagram_clone/tab_page.dart';
 import 'package:instagram_clone/login_page.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
-class Rootpage extends StatelessWidget {
+class RootPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // 리액티브 프로그래밍, 스트림 데이터 제어

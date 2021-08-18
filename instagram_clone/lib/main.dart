@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
         primaryColor: Colors.white,
         accentColor: Colors.black,
       ),
-      home: Rootpage(),
+      home: RootPage(),
     );
   }
 }
