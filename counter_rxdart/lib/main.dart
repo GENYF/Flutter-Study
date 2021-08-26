@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
 }
 
 class Counter extends StatefulWidget {
-  const Counter({Key? key}) : super(key: key);
+  const Counter({Key key}) : super(key: key);
 
   @override
   _CounterState createState() => _CounterState();
